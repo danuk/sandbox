@@ -3,12 +3,15 @@ WORKDIR /root
 
 RUN apt-get update -y && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-    vim \
     curl \
+    ca-certificates \
     wget \
     telnet \
+    vim \
     dnsutils \
     net-tools \
+    iputils-ping \
+    iputils-tracepath \
     && \
     apt-get clean
 
