@@ -20,6 +20,8 @@ spec:
         volumeMounts:
         - name: root
           mountPath: /root
+        securityContext:
+          privileged: true
   volumeClaimTemplates:
   - metadata:
       name: root
